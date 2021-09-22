@@ -1,0 +1,48 @@
+body {
+  margin-top: 100px;
+}
+img {
+  width: 50%;
+}
+.form-container{
+  display: flex;
+  margin: 150px 0px;
+}
+.submit-btn {
+  width: 100%;
+  background-color: aquamarine;
+  border: 3px solid rgb(83, 49, 49);
+  border-radius: 25px;
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: 45px;
+  color: #337ab7;
+}
+a {
+  color: rgb(250, 1, 1);
+  font-size: 45px;
+  background-color: aquamarine;
+  border: 3px solid rgb(231, 231, 231);
+  border-radius: 25px;
+  padding: 10px;
+}
+a:hover{
+  color: rgb(250, 1, 1);
+  font-size: 45px;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: aquamarine;
+  border: 3px solid rgb(231, 231, 231);
+  border-radius: 25px;
+  padding: 10px;
+}
+span {
+  color: rgb(5, 173, 165);
+  font-size: 160px;
+  font-weight: 600;
+}

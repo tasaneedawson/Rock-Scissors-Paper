@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{% block title %}Rock Paper Scissors{% endblock %}</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <p>Please select your choice</p>
+
+          <form action="/" method="POST">
+            <div class="form-container">
+              <div class="rps">
+                 <input type="radio" id="rock" name="choice" value="rock" required>
+                 <label for="rock"><img src="{{ url_for('static',filename='images/rock.png') }}" alt="Rock" /></label>
+              </div>
+
+              <div class="rps">
+                <input type="radio" id="paper" name="choice" value="paper">
+                <label for="paper"><img src="{{ url_for('static',filename='images/paper.png') }}" alt="Paper"/></label>
+              </div>
+
+              <div class="rps">
+                <input type="radio" id="scissors" name="choice" value="scissors">
+                <label for="scissors"><img src="{{ url_for('static',filename='images/scissors.png') }}" alt="Scissors" /></label>
+              </div>
+            </div>
+
+            <input class="submit-btn" type="submit" value="Submit">
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>

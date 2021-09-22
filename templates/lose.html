@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{% block title %}Rock Paper Scissors{% endblock %}</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="shortcut icon" href="/static/favicon.ico">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+	</head>
+
+	<body>
+
+		<div class="container">
+      
+      <p>you: {{ user }} </p>
+
+      <p>computer: {{ computer }} </p>
+
+      <p>result: </p>
+        <span>You lose!</span>
+      
+
+      <h2><a href="/">Play again?</a></h2>
+
+    </div>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+  
